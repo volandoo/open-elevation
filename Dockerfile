@@ -2,7 +2,7 @@ FROM osgeo/gdal:ubuntu-small-latest-amd64
 
 RUN apt-get update
 RUN apt-get install -y libspatialindex-dev 
-RUN apt-get install unar --help
+RUN apt-get install -y unar
 RUN apt-get install -y bc python3-pip wget
 
 ADD ./requirements.txt .
